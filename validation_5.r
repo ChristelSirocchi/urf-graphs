@@ -2,7 +2,7 @@
 #remotes::install_github("Monoxido45/PhyloHclust")
 library(PhyloHclust)
 source("utilities.r")
-library(ranger, lib.loc = "/home/christelsirocchi/R/x86_64-pc-linux-gnu-library/4.3") 
+library(ranger, lib.loc = "uRF_PATH") # change with the path of the directory where the custom ranger library was installed
 
 # compute feature importance with the proposed methods and three state-of-the-art methods
 
@@ -202,7 +202,7 @@ for (dataset in datasets){
 # compute feature importance by classification (supervised RF) #
 ################################################################
 
-library(ranger, lib.loc = "/home/christelsirocchi/R/x86_64-pc-linux-gnu-library/RF") # import original ranger
+library(ranger, lib.loc = "ranger_PATH") # change with the path of the directory where the standard ranger library was installed
 
 importance_types <- c("impurity", "impurity_corrected")
 

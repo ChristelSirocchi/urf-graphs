@@ -1,5 +1,5 @@
 source("utilities.r")
-library(ranger, lib.loc = "/home/christelsirocchi/R/x86_64-pc-linux-gnu-library/4.3") 
+library(ranger, lib.loc = "uRF_PATH") # change with the path of the directory where the custom ranger library was installed 
 
 ########################################################
 ############# GENERATE DATA & TRAIN MODELS #############
